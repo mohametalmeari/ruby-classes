@@ -20,7 +20,7 @@ class Animal
     # attr_accessor :owner
 
     ## add the animal to the animal owner
-    attr_reader :owner 
+    attr_reader :owner, :visits # to read visits
     def owner=(owner)
       @owner = owner
       owner.animals.push(self) unless owner.animals.include?(self)
@@ -32,6 +32,7 @@ class Animal
     @number_of_legs = number_of_legs
     @type = type
     @liked_food = NoFood.new()
+    @visits = [] # to initiate visits
   end
 
   def speak
