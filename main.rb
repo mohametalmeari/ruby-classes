@@ -68,3 +68,20 @@ require "./owner.rb"
 # # puts alex.animals.count
 # # puts alex.animals.first.name
 # # puts alex.animals.first.number_of_legs
+
+# dog = Dog.new("black", "Rax")
+# spider = Spider.new(85, "Bob")
+# animal = Animal.new("lion", 4, "Some name")
+# alex = Owner.new("Alex")
+# puts alex.animals
+# alex.add_animal(dog)
+# puts alex.animals
+# alex.add_animal(spider)
+# puts alex.animals
+# alex.add_animal(animal)
+# puts alex.animals.last.owner #.name not working
+# puts animal.owner
+# animal.owner = alex
+# puts animal.owner
+# puts animal.owner.name
+# puts alex.animals.last.owner.name

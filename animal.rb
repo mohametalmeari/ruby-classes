@@ -16,6 +16,8 @@ class Animal
     attr_accessor :id 
     attr_accessor :type 
     attr_accessor :number_of_legs 
+    
+    attr_accessor :owner
 
   def initialize(type, number_of_legs, name = "Unknown")
     @id = Random.rand(1..1000)
