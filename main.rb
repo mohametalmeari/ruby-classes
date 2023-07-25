@@ -1,6 +1,7 @@
 require "./animal.rb"
 require "./dog.rb"
 require "./spider.rb"
+require "./owner.rb"
 
 # animal_1 = Animal.new("dog", 4, "Rex")
 # puts animal_1.id
@@ -51,3 +52,19 @@ require "./spider.rb"
 # puts animal.likes_food?("bug")
 # puts dog.likes_food?("bug")
 # puts spider.likes_food?("bug")
+
+
+# dog = Dog.new("black", "Rax")
+# spider = Spider.new(85, "Bob")
+# animal = Animal.new("lion", 4, "Some name")
+# alex = Owner.new("Alex")
+# # puts alex.animals
+# alex.add_animal(dog)
+# # puts alex.animals
+# alex.add_animal(spider)
+# # puts alex.animals
+# alex.add_animal(animal)
+# # puts alex.animals.map {|animal| animal.name}
+# # puts alex.animals.count
+# # puts alex.animals.first.name
+# # puts alex.animals.first.number_of_legs
