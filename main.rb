@@ -85,3 +85,34 @@ require "./owner.rb"
 # puts animal.owner
 # puts animal.owner.name
 # puts alex.animals.last.owner.name
+
+dog = Dog.new("black", "Rax")
+spider = Spider.new(85, "Bob")
+animal = Animal.new("lion", 4, "Some name")
+alex = Owner.new("Alex")
+# puts alex.animals
+# puts dog.owner
+alex.add_animal(dog)
+# puts dog.owner
+# puts dog.owner.name
+# puts alex.animals
+# puts spider.owner
+alex.add_animal(spider)
+# puts spider.owner
+# puts spider.owner.name
+# puts alex.animals
+# puts animal.owner
+alex.add_animal(animal)
+# puts animal.owner
+# puts animal.owner.name
+# puts alex.animals.count
+# puts alex.animals.first.name
+# puts alex.animals.first.number_of_legs
+second_animal = Animal.new("cat", 4, "Kitty")
+# puts second_animal.owner
+# puts alex.animals.count
+second_animal.owner = alex
+# puts second_animal.owner
+# puts alex.animals.count
+# puts alex.animals.last
+# puts alex.animals.last.name
